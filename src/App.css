@@ -1,5 +1,47 @@
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://example.com/MaterialIcons-Regular.eot);
+  /* For IE6-8 */
+  src: local('Material Icons'),
+    local('MaterialIcons-Regular'),
+    url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+    url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+    url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
 .App {
   text-align: center;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
 }
 
 .App-logo {
@@ -32,7 +74,206 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
+  }
+}
+
+.nav-options {
+  text-decoration: none;
+  color: var(--beige);
+}
+
+.left-center-col-arrange {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.left-center-row-arrange {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center
+}
+
+.margin20 {
+  margin-left: 10px;
+}
+
+.webpage-position {}
+
+.flex-row {
+  display: flex;
+}
+
+.darkgray {
+  transition: all 1s;
+  background-color: var(--darkgray);
+}
+
+.row-arrange {
+  display: flex;
+  flex-direction: row;
+}
+
+.add-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--beige);
+  font-weight: bolder;
+  font-size: 30px
+}
+
+.modal-input {
+  background: transparent;
+  color: var(--beige);
+  border-radius: 15px;
+}
+
+.button-position-center {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  width: 40px;
+  height: 25px;
+}
+
+.container-center {
+  display: flex;
+  justify-content: center;
+  margin-top: 17px;
+}
+
+.column-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.row-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.test {
+  width: 393px
+}
+
+.dot {
+  height: 8px;
+  width: 8px;
+  border-radius: 8px;
+  display: flex;
+  margin-left: 1px;
+  background-color: black;
+}
+
+.day-dot {
+  background-color: var(--day);
+}
+
+.week-dot {
+  background-color: var(--week);
+}
+
+.month-dot {
+  background-color: var(--month);
+}
+
+.cal {
+  width: 220px;
+  background-color: blue;
+}
+
+.pos-right-bottom {
+  position: fixed;
+  bottom: 5vh;
+  left: 90vw;
+}
+
+.flex-end {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.calendar-icon-pos {
+  position: absolute;
+  left: 10px;
+}
+
+.side {
+  position: absolute;
+  right: 20px;
+  top: 53px ;
+}
+.slide-in{
+  animation-name: fade-in;
+  animation-duration:1s;
+}
+.come-down{
+  animation-name: come-down;
+  animation-duration:1s;
+}
+.come-up{
+  animation-name: come-up;
+  animation-duration:1s;
+}
+#modal {
+  -webkit-box-shadow: 2px 2px 10px 3px #000000; 
+  box-shadow: 3px 3px 10px 2px #000000;
+  }
+@media (min-width : 1000px) {
+  /* 1000px 보다 클 때 tablet */
+  .tablet-show {
+    display: none;
+  }
+}
+
+@media (max-width : 1000px) {
+  /* 1000px 보다 작을 때 tablet */
+  .tablet-noshow {
+    display: none;
+  }
+  .modal-tablet{
+    width: 300px;
+  }
+}
+@media (max-width : 363px) {
+  /* 모바일 버젼 */
+  .mobile-noshow {
+    display: none;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes  come-down{
+  0% {
+    top: 0px;
+  }
+  100% {
+    down: 10px;
+  }
+}
+@keyframes  come-up{
+  0% {
+    top: 10px;
+  }
+  100% {
+    down: 0px;
   }
 }

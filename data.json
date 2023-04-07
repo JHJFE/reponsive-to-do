@@ -1,0 +1,84 @@
+{
+  "data": {
+    "day": [
+      {
+        "id": 0,
+        "createdAt": "2023-04-01",
+        "text": "코플릿 도전",
+        "type": "day"
+      },
+      {
+        "id": 1,
+        "createdAt": "2023-04-04",
+        "text": "운동 1시간",
+        "type": "day"
+      },
+      {
+        "id": 2,
+        "createdAt": "2023-04-22",
+        "text": "commit 하기",
+        "type": "day"
+      }
+    ],
+    "week": [
+      {
+        "id": 0,
+        "createdAt": "2023-04-12",
+        "text": "코플릿 도전",
+        "type": "week"
+      },
+      {
+        "id": 1,
+        "createdAt": "2023-03-016",
+        "text": "운동 1시간",
+        "type": "week"
+      },
+      {
+        "id": 2,
+        "createdAt": "2023-03-21",
+        "text": "commit 하기",
+        "type": "week"
+      }
+    ],
+    "month": [
+      {
+        "id": 0,
+        "createdAt": "2023-03-30",
+        "text": "코플릿 도전",
+        "type": "month"
+      },
+      {
+        "id": 1,
+        "createdAt": "2023-03-04",
+        "text": "운동 1시간",
+        "type": "month"
+      },
+      {
+        "id": 2,
+        "createdAt": "2023-03-22",
+        "text": "commit 하기",
+        "type": "month"
+      }
+    ],
+    "favorites": [
+      {
+        "id": 0,
+        "createdAt": "2023-03-01",
+        "text": "코플릿 도전",
+        "type": "day"
+      },
+      {
+        "id": 1,
+        "createdAt": "2023-03-04",
+        "text": "운동 1시간",
+        "type": "day"
+      },
+      {
+        "id": 2,
+        "createdAt": "2023-03-22",
+        "text": "commit 하기",
+        "type": "day"
+      }
+    ]
+  }
+}
